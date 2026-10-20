@@ -454,6 +454,10 @@
     }
 
     @media (max-width: 600px) {
+      .home-link {
+        display: none;
+      }
+
       .dedication {
         font-size: 18px;
         max-width: 150px;
@@ -482,6 +486,7 @@
     }
 
     @media (max-height: 600px) and (min-width: 600px) {
+      
       .garden {
         min-height: 360px;
       }
@@ -521,7 +526,7 @@
 
 <body>
   <main class="garden" id="garden">
-    
+
     <header class="page-header">
       <p class="dedication">Tặng em Mèo, cả một vườn hoa.</p>
       <div>
@@ -530,7 +535,7 @@
         <a class="home-link" href="./index.html">Xem lại bó hoa <span aria-hidden="true">❀</span></a>
       </div>
     </header>
-    
+
     <canvas id="flowers" aria-hidden="true"></canvas>
     <button class="flower-button" id="bloom" type="button" aria-label="Chạm để cả vườn hoa nở"
       aria-describedby="introHint"></button>
@@ -562,7 +567,8 @@
           <p class="recipient">Gửi <span id="cardRecipient">bạn Trân</span>,</p>
           <h2 id="cardTitle">Chúc Diễm Trân<br>một ngày thật tuyệt vời.</h2>
           <div id="cardMessage">
-            <p class="message">Chúc em Mèo luôn hạnh phúc, được yêu thương chân thành và đón nhận thật nhiều điều tốt đẹp.</p>
+            <p class="message">Chúc em Mèo luôn hạnh phúc, được yêu thương chân thành và đón nhận thật nhiều điều tốt
+              đẹp.</p>
             <p class="message">Cảm ơn vì đã xuất hiện,<br>và đã làm cho cuộc sống của tui trở nên đặc biệt.</p>
           </div>
           <p class="signature" id="cardSignature">Quý bạn rất nhiều ♡</p>
