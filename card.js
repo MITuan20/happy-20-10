@@ -181,7 +181,13 @@
       return paragraph;
     });
     document.getElementById('cardMessage').replaceChildren(...paragraphs);
-    document.getElementById('cardSender').textContent = greeting.sender;
+    // document.getElementById('cardSender').textContent = greeting.sender;
+    const senderElement = document.getElementById('cardSender');
+    senderElement.textContent = greeting.sender;
+    const loveSpan = document.createElement('span');
+    loveSpan.style.fontSize = '0.7em';
+    loveSpan.textContent = ' with love';
+    senderElement.appendChild(loveSpan);
   }
 
   function showReading() {
