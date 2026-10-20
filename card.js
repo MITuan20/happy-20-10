@@ -4,7 +4,7 @@
   const STORAGE_KEY = 'flower.greeting.20-10.v1';
   const defaultGreeting = {
     recipient: 'bạn',
-    message: 'Hôm nay 20/10, tặng Trân đóa hoa xinh thứ hai vì Trân chính là đóa hoa đẹp nhất.\n\nChúc bạn Mèo luôn vui vẻ. mạnh khỏe và thật hạnh phúc.\n\nHôm nay và những ngày về sau, hãy luôn mỉm cười, yêu thương bản thân và tự tin theo đuổi những điều mình mong muốn nhé.',
+    message: 'Hôm nay 20/10, tặng Trân đóa hoa xinh thứ hai vì Trân chính là đóa hoa đẹp nhất.\n\nChúc em Mèo luôn vui vẻ. Mạnh khỏe và thật hạnh phúc.\n\nHôm nay và những ngày về sau, hãy luôn mỉm cười, yêu thương bản thân và tự tin theo đuổi những điều mình mong muốn nhé.',
     sender: 'NTT'
   };
   const dialog = document.getElementById('greetingCard');
