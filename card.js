@@ -3,7 +3,7 @@
 
   const STORAGE_KEY = 'flower.greeting.20-10.v1';
   const defaultGreeting = {
-    recipient: 'bạn',
+    recipient: 'em Mèo',
     message: 'Hôm nay 20/10, tặng Trân đóa hoa xinh thứ hai vì Trân chính là đóa hoa đẹp nhất.\n\nChúc em Mèo luôn vui vẻ. Mạnh khỏe và thật hạnh phúc.\n\nHôm nay và những ngày về sau, hãy luôn mỉm cười, yêu thương bản thân và tự tin theo đuổi những điều mình mong muốn nhé.',
     sender: 'NTT'
   };
@@ -223,7 +223,10 @@
 
   editButton.addEventListener('click', () => {
     Object.keys(inputs).forEach(key => {
-      inputs[key].value = greeting[key];
+      // inputs[key].value = greeting[key];
+      inputs[key].value = key === 'recipient'
+        ? defaultGreeting.recipient
+        : greeting[key];
       inputs[key].setCustomValidity('');
     });
     reading.hidden = true;
@@ -249,6 +252,7 @@
     }
     if (!editor.reportValidity()) return;
     greeting = Object.fromEntries(Object.entries(inputs).map(([key, input]) => [key, input.value.trim()]));
+    greeting.recipient = defaultGreeting.recipient;
     renderGreeting();
     showReading();
     // try {
